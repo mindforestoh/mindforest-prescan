@@ -1,0 +1,466 @@
+[index (1).html](https://github.com/user-attachments/files/30685172/index.1.html)
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>마음의 숲 · EAP 고객사 사전조사 접수</title>
+<style>:root{--ink:#1a1f2b;--soft:#4b5364;--faint:#8a91a3;--bg:#f6f7f9;--card:#fff;--line:#e4e7ee;--accent:#2563eb;--accent-soft:#eff4ff;--green:#16794c;--green-soft:#e9f6ef;--amber:#9a6700;--amber-soft:#fdf3d8;--red:#b3382c;--red-soft:#fdeceb;--forest:#1e6b4f;}*{box-sizing:border-box;margin:0;padding:0;}body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:15px;}header{background:var(--card);border-bottom:1px solid var(--line);}.hwrap{max-width:1000px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}.brand{font-weight:700;color:var(--forest);font-size:15px;text-decoration:none;}nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;}main{max-width:1000px;margin:0 auto;padding:22px 16px 40px;}footer{color:var(--faint);font-size:12px;text-align:center;padding:18px;border-top:1px solid var(--line);}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;}.card+.card{margin-top:14px;}h1{font-size:18px;font-weight:700;margin-bottom:4px;}h2{font-size:15px;font-weight:700;margin-bottom:12px;}.muted{color:var(--faint);font-size:13px;}label{display:block;font-size:12.5px;font-weight:600;color:var(--soft);margin-bottom:5px;}input,select,textarea{width:100%;font:inherit;font-size:14px;padding:9px 11px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink);}input:focus,select:focus,textarea:focus{outline:none;border-color:var(--forest);}textarea{resize:vertical;line-height:1.55;}.field{margin-bottom:14px;}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}@media(max-width:620px){.grid2{grid-template-columns:1fr;}}button{font:inherit;font-size:14px;font-weight:600;border-radius:9px;padding:9px 16px;cursor:pointer;border:1px solid transparent;}.primary{background:var(--forest);color:#fff;}.primary:hover{background:#175840;}.ghost{background:#fff;color:var(--soft);border-color:var(--line);}.ghost:hover{border-color:var(--forest);color:var(--forest);}.danger{background:#fff;color:var(--red);border-color:#f0cdc9;}button:disabled{opacity:.55;cursor:not-allowed;}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:99px;white-space:nowrap;}.t-gray{background:#f0f2f6;color:var(--soft);}.t-blue{background:var(--accent-soft);color:var(--accent);}.t-green{background:var(--green-soft);color:var(--green);}.t-amber{background:var(--amber-soft);color:var(--amber);}.t-red{background:var(--red-soft);color:var(--red);}table{width:100%;border-collapse:collapse;font-size:14px;}th,td{padding:10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle;}th{font-size:12px;color:var(--faint);font-weight:600;background:#fafbfc;}tbody tr.clickable{cursor:pointer;}tbody tr.clickable:hover{background:#fafbfc;}pre.prompt{background:#0f1720;color:#e6edf3;border-radius:11px;padding:16px;font-size:12.5px;line-height:1.65;white-space:pre-wrap;word-break:break-word;max-height:440px;overflow:auto;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}.note{border-radius:10px;padding:11px 14px;font-size:13.5px;margin-bottom:14px;}.note.blue{background:var(--accent-soft);border:1px solid #d5e2fb;}.note.amber{background:var(--amber-soft);border:1px solid #f3e3b0;}.center{max-width:400px;margin:70px auto;}#toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);background:#1a1f2b;color:#fff;padding:11px 20px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:99;max-width:90vw;}#toast.on{opacity:1;}.drop{border:2px dashed var(--line);border-radius:10px;padding:8px;text-align:center;font-size:12.5px;color:var(--faint);margin-top:6px;}.drop.over{border-color:var(--forest);background:var(--green-soft);color:var(--forest);}.hidden{display:none;}</style>
+</head>
+<body>
+<header><div class="hwrap">
+<a href="#/list" class="brand">마음의 숲 · EAP 고객사 사전조사 접수</a>
+<nav id="nav"></nav>
+</div></header>
+<main id="app"><p class="muted" style="text-align:center;padding:60px 0">불러오는 중…</p></main>
+<footer>내부 검토용 도구입니다. 접수 내용과 생성된 리포트를 고객사에 그대로 전달하지 마십시오.</footer>
+<div id="toast"></div>
+<script type="module">
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+const SUPABASE_URL = 'https://llmfsdcjixiiudwnkoqu.supabase.co';
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxsbWZzZGNqaXhpaXVkd25rb3F1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAxNDI0MTAsImV4cCI6MjA5NTcxODQxMH0.dKP5MEfwBxGBxSs6jGFROoBbQRcdnethu_zF4LAM7pw';
+const sb = createClient(SUPABASE_URL, SUPABASE_ANON);
+const STATUSES = ['접수','조사중','완료'];
+const DOC_TYPES = ['없음','과업지시서','제안요청서'];
+const ROLES = ['super_admin','admin','pm','customer'];
+const STAFF = ['super_admin','admin','pm'];
+const ADMIN = ['super_admin','admin'];
+const $ = (s,r=document)=>r.querySelector(s);
+const app = $('#app'), nav = $('#nav');
+let me = null;            // { id, email, role, active }
+let recovery = false;     // 비밀번호 재설정 모드
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const isStaff = () => !!me && me.active && STAFF.includes(me.role);
+const isAdmin = () => !!me && me.active && ADMIN.includes(me.role);
+let toastTimer;
+function toast(msg){
+const t = $('#toast'); t.textContent = msg; t.classList.add('on');
+clearTimeout(toastTimer); toastTimer = setTimeout(()=>t.classList.remove('on'), 3200);
+}
+function fmtDate(v){ if(!v) return ''; const d=new Date(v); return isNaN(d)?'':
+`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
+function dday(due){
+if(!due) return null;
+const t=new Date(due+'T00:00:00'); if(isNaN(t)) return null;
+const n=new Date(), today=new Date(n.getFullYear(),n.getMonth(),n.getDate());
+const d=Math.round((t-today)/86400000);
+return d===0?'D-DAY':(d>0?`D-${d}`:`D+${-d}`);
+}
+function ddayTone(due){
+if(!due) return 't-gray';
+const t=new Date(due+'T00:00:00'), n=new Date(), today=new Date(n.getFullYear(),n.getMonth(),n.getDate());
+const d=Math.round((t-today)/86400000);
+return d<0?'t-red':(d<=3?'t-amber':'t-blue');
+}
+const statusTone = s => s==='완료'?'t-green':(s==='조사중'?'t-blue':'t-gray');
+/* ---------------- Claude 작업지시문 ---------------- */
+function buildPrompt(r){
+const L = ['[EAP 고객사 사전조사 요청]',''];
+L.push(`■ 고객사: ${r.company_name}`);
+if(r.site_url) L.push(`■ 홈페이지: ${r.site_url}`);
+if(r.due_date) L.push(`■ 마감/미팅일: ${r.due_date} (${dday(r.due_date)})`);
+const p=[]; if(r.requester) p.push(`접수자: ${r.requester}`);
+p.push(`접수일: ${fmtDate(r.created_at)}`);
+L.push(`■ ${p.join(' · ')}`);
+L.push('',
+'■ 요청 사항',
+'1) eap-client-prescan 스킬로 사전조사 리포트(HTML+DOCX)를 생성할 것.',
+'2) 아래 원문이 있으면 eap-rfp-analyzer 스킬을 함께 돌려 배점·자격요건·일정 분석을 병행할 것.',
+'3) 조사 5대 변수를 반드시 채울 것 — 인력 구성 / 사업장 분포 / 근무형태 / 스트레스 리스크 / 기존 복지.',
+"4) 모든 항목에 확신도(확인·추정·미확인)를 표기하고, 미확인 항목은 전부 '확인 필요사항'(미팅 질문)으로 이월할 것.",
+'5) 사이트 캡처 대상: 홈페이지, 복리후생, 지속가능경영·ESG, 윤리강령·신고센터 (존재하는 것만).',
+'   특히 복리후생 페이지는 심리상담 항목 유무가 제안 방향을 가르므로 반드시 캡처할 것.',
+"6) 상장사이면 DART 직원현황(인원·성비·평균 근속연수)을 확인해 해당 항목의 확신도를 '확인'으로 올릴 것.",
+"7) 리스크는 '확인된 이슈'와 '업종 일반'을 반드시 구분해 표기할 것.",
+'8) 완성 후 핵심 발견 3가지와 가장 큰 미확인 항목을 채팅에 5줄 이내로 요약할 것.');
+if(r.doc_text?.trim()) L.push('', `■ 첨부 원문 (${r.doc_type||'없음'})`, r.doc_text.trim());
+if(r.memo?.trim()) L.push('', '■ 메모', r.memo.trim());
+return L.join('\n');
+}
+async function copyText(text){
+try{
+if(navigator.clipboard?.writeText){ await navigator.clipboard.writeText(text); return true; }
+}catch(e){}
+const ta=document.createElement('textarea');
+ta.value=text; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.left='-9999px';
+document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0,text.length);
+let ok=false; try{ ok=document.execCommand('copy'); }catch(e){ ok=false; }
+document.body.removeChild(ta); return ok;
+}
+/* ---------------- 인증 ---------------- */
+async function loadMe(){
+const { data:{ session } } = await sb.auth.getSession();
+if(!session){ me=null; return; }
+const { data, error } = await sb.from('app_profiles')
+.select('id,email,name,role,active').eq('id', session.user.id).maybeSingle();
+if(error){ me = { id:session.user.id, email:session.user.email, role:null, active:false, err:error.message }; return; }
+me = data ? { ...data, email: data.email || session.user.email }
+: { id:session.user.id, email:session.user.email, role:null, active:false };
+}
+function viewAuth(mode='login'){
+nav.innerHTML='';
+const isSignup = mode==='signup', isReset = mode==='forgot';
+app.innerHTML = `<div class="center card">
+<div style="text-align:center;margin-bottom:18px">
+<div style="font-size:12px;font-weight:700;color:var(--forest)">마음의 숲</div>
+<h1 style="margin-top:5px">EAP 고객사 사전조사 접수</h1>
+<p class="muted">내부 임직원 전용 도구입니다.</p>
+</div>
+<form id="f">
+<div class="field"><label>이메일</label>
+<input id="email" type="email" required placeholder="name@mindforest.co.kr" autocomplete="username"></div>
+${isReset?'':`<div class="field"><label>비밀번호</label>
+<input id="pw" type="password" required minlength="6" placeholder="6자 이상"
+autocomplete="${isSignup?'new-password':'current-password'}"></div>`}
+<button class="primary" style="width:100%" id="sub" type="submit">
+${isReset?'재설정 메일 보내기':(isSignup?'회원가입':'로그인')}</button>
+</form>
+<div style="margin-top:14px;text-align:center;display:grid;gap:7px">
+${isReset?'':`<a href="#" id="toForgot" class="muted">비밀번호를 잊으셨나요?</a>`}
+<a href="#" id="swap" class="muted">${isReset?'로그인으로 돌아가기':(isSignup?'이미 계정이 있습니다 · 로그인':'계정이 없으신가요? 회원가입')}</a>
+</div>
+<p class="muted" style="margin-top:16px;text-align:center;font-size:12px">
+관리자가 등록한 이메일만 접수 데이터를 볼 수 있습니다.</p>
+</div>`;
+$('#swap').onclick = e => { e.preventDefault(); viewAuth(isReset ? 'login' : (isSignup?'login':'signup')); };
+const tf = $('#toForgot'); if(tf) tf.onclick = e => { e.preventDefault(); viewAuth('forgot'); };
+$('#f').onsubmit = async e => {
+e.preventDefault();
+const btn=$('#sub'); btn.disabled=true;
+const email=$('#email').value.trim();
+try{
+if(isReset){
+const { error } = await sb.auth.resetPasswordForEmail(email,
+{ redirectTo: location.origin + location.pathname });
+if(error) throw error;
+toast('재설정 메일을 보냈습니다. 받은편지함과 스팸함을 확인해 주세요.');
+} else if(isSignup){
+const { data, error } = await sb.auth.signUp({ email, password:$('#pw').value });
+if(error) throw error;
+if(data.session){ toast('가입이 완료되었습니다.'); await boot(); }
+else toast('가입 확인 메일을 보냈습니다. 메일의 링크를 눌러 인증해 주세요.');
+} else {
+const { error } = await sb.auth.signInWithPassword({ email, password:$('#pw').value });
+if(error) throw error;
+await boot();
+}
+}catch(err){
+const m = err?.message || '알 수 없는 오류';
+if(/already registered/i.test(m))
+toast("이미 가입된 이메일입니다. '비밀번호를 잊으셨나요?'로 재설정해 주세요.");
+else if(/Invalid login credentials/i.test(m)) toast('이메일 또는 비밀번호가 올바르지 않습니다.');
+else toast(`실패: ${m}`);
+}finally{ btn.disabled=false; }
+};
+}
+function viewSetPassword(){
+nav.innerHTML='';
+app.innerHTML = `<div class="center card">
+<h1>새 비밀번호 설정</h1>
+<p class="muted" style="margin-bottom:16px">6자 이상으로 정해 주세요.</p>
+<form id="f">
+<div class="field"><label>새 비밀번호</label>
+<input id="p1" type="password" required minlength="6" autocomplete="new-password"></div>
+<div class="field"><label>새 비밀번호 확인</label>
+<input id="p2" type="password" required minlength="6" autocomplete="new-password"></div>
+<button class="primary" style="width:100%" type="submit">비밀번호 변경</button>
+</form>
+</div>`;
+$('#f').onsubmit = async e => {
+e.preventDefault();
+const a=$('#p1').value, b=$('#p2').value;
+if(a!==b) return toast('비밀번호가 일치하지 않습니다.');
+const { error } = await sb.auth.updateUser({ password:a });
+if(error) return toast(`변경 실패: ${error.message}`);
+recovery=false; toast('비밀번호를 변경했습니다.');
+location.hash='#/list'; await boot();
+};
+}
+/* ---------------- 목록 ---------------- */
+async function viewList(){
+app.innerHTML = `<div class="row" style="margin-bottom:14px">
+<h1>접수 목록</h1>
+<div style="margin-left:auto" class="row">
+<input id="q" placeholder="고객사명 검색" style="width:190px">
+<select id="st" style="width:120px"><option value="">전체 상태</option>
+${STATUSES.map(s=>`<option>${s}</option>`).join('')}</select>
+</div>
+</div>
+<div class="card" id="box"><p class="muted">불러오는 중…</p></div>`;
+const { data, error } = await sb.from('prescan_intakes')
+.select('*').order('created_at',{ascending:false});
+if(error){ $('#box').innerHTML = `<p class="muted">목록을 불러오지 못했습니다: ${esc(error.message)}</p>`; return; }
+const render = () => {
+const q = $('#q').value.trim().toLowerCase(), st = $('#st').value;
+const rows = (data||[]).filter(r =>
+(!q || (r.company_name||'').toLowerCase().includes(q)) && (!st || r.status===st));
+if(!rows.length){
+$('#box').innerHTML = `<p class="muted" style="text-align:center;padding:26px 0">
+${data.length? '조건에 맞는 접수 건이 없습니다.' :
+'아직 접수된 건이 없습니다. 상단의 [새 접수]로 첫 건을 등록해 보세요.'}</p>`;
+return;
+}
+$('#box').innerHTML = `<div style="overflow-x:auto"><table>
+<thead><tr><th>고객사</th><th style="width:110px">접수일</th><th style="width:130px">마감</th>
+<th style="width:80px">상태</th><th style="width:90px">접수자</th></tr></thead>
+<tbody>${rows.map(r=>`<tr class="clickable" data-id="${r.id}">
+<td><b>${esc(r.company_name)}</b>${r.site_url?`<br><span class="muted">${esc(r.site_url)}</span>`:''}</td>
+<td class="muted">${fmtDate(r.created_at)}</td>
+<td>${r.due_date?`${esc(r.due_date)} <span class="tag ${ddayTone(r.due_date)}">${dday(r.due_date)}</span>`:'<span class="muted">—</span>'}</td>
+<td><span class="tag ${statusTone(r.status)}">${esc(r.status)}</span></td>
+<td class="muted">${esc(r.requester||'—')}</td></tr>`).join('')}</tbody></table></div>`;
+$('#box').querySelectorAll('tr[data-id]').forEach(tr =>
+tr.onclick = () => location.hash = '#/i/'+tr.dataset.id);
+};
+$('#q').oninput = render; $('#st').onchange = render; render();
+}
+/* ---------------- 새 접수 ---------------- */
+function viewNew(){
+app.innerHTML = `<h1 style="margin-bottom:14px">새 접수</h1>
+<form id="f" class="card">
+<div class="grid2">
+<div class="field"><label>고객사명 *</label><input id="company_name" required placeholder="주식회사 ○○"></div>
+<div class="field"><label>고객사 홈페이지 URL</label><input id="site_url" placeholder="https://..."></div>
+</div>
+<div class="grid2">
+<div class="field"><label>문서 종류</label>
+<select id="doc_type">${DOC_TYPES.map(d=>`<option>${d}</option>`).join('')}</select></div>
+<div class="field"><label>제안 마감일 / 미팅 예정일</label><input id="due_date" type="date"></div>
+</div>
+<div class="field"><label>과업지시서 · 제안요청서 원문</label>
+<textarea id="doc_text" rows="13" placeholder="원문을 통째로 붙여넣으세요. 배점표·자격요건·일정이 들어 있으면 그대로 두는 편이 좋습니다."></textarea>
+<div class="drop" id="drop">.txt · .md 파일을 여기에 끌어다 놓으면 내용이 채워집니다 (업로드 아님, 브라우저에서만 읽음)</div>
+</div>
+<div class="grid2">
+<div class="field"><label>접수자</label><input id="requester" placeholder="이름"></div>
+<div class="field"><label>메모</label><input id="memo" placeholder="참고사항"></div>
+</div>
+<div class="row"><button class="primary" type="submit" id="sub">저장</button>
+<a href="#/list"><button class="ghost" type="button">취소</button></a></div>
+</form>`;
+const drop=$('#drop'), ta=$('#doc_text');
+['dragenter','dragover'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('over');}));
+['dragleave','drop'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('over');}));
+drop.addEventListener('drop', e => {
+const f=e.dataTransfer.files?.[0]; if(!f) return;
+if(!/\.(txt|md|csv)$/i.test(f.name)) return toast('.txt 또는 .md 파일만 읽을 수 있습니다. PDF·HWP는 텍스트를 복사해 붙여넣어 주세요.');
+const rd=new FileReader(); rd.onload=()=>{ ta.value=rd.result; toast(`${f.name} 내용을 불러왔습니다.`); }; rd.readAsText(f,'utf-8');
+});
+$('#f').onsubmit = async e => {
+e.preventDefault(); $('#sub').disabled = true;
+const row = {
+company_name:$('#company_name').value.trim(),
+site_url:$('#site_url').value.trim() || null,
+doc_type:$('#doc_type').value,
+doc_text:$('#doc_text').value.trim() || null,
+due_date:$('#due_date').value || null,
+requester:$('#requester').value.trim() || null,
+memo:$('#memo').value.trim() || null,
+created_by: me.id
+};
+const { data, error } = await sb.from('prescan_intakes').insert(row).select('id').single();
+$('#sub').disabled = false;
+if(error) return toast(`저장 실패: ${error.message}`);
+toast('접수했습니다.'); location.hash = '#/i/'+data.id;
+};
+}
+/* ---------------- 상세 ---------------- */
+async function viewDetail(id){
+app.innerHTML = `<p class="muted">불러오는 중…</p>`;
+const { data:r, error } = await sb.from('prescan_intakes').select('*').eq('id',id).maybeSingle();
+if(error||!r){ app.innerHTML=`<div class="card"><p class="muted">접수 건을 찾을 수 없습니다.</p></div>`; return; }
+const prompt = buildPrompt(r);
+app.innerHTML = `<div class="row" style="margin-bottom:14px">
+<h1>${esc(r.company_name)}</h1>
+<span class="tag ${statusTone(r.status)}">${esc(r.status)}</span>
+<a href="#/list" style="margin-left:auto"><button class="ghost" type="button">목록</button></a>
+</div>
+<div class="card">
+<h2>Claude 작업지시문</h2>
+<div class="note blue">아래 전체를 복사해 Claude 대화창에 붙여넣으면 사전조사가 시작됩니다.</div>
+<button class="primary" id="copy" style="margin-bottom:12px">전체 복사하기</button>
+<pre class="prompt" id="pre">${esc(prompt)}</pre>
+</div>
+<div class="card">
+<h2>접수 내용</h2>
+<table>
+<tr><th style="width:130px">홈페이지</th><td>${r.site_url?`<a href="${esc(r.site_url)}" target="_blank" rel="noopener">${esc(r.site_url)}</a>`:'—'}</td></tr>
+<tr><th>문서 종류</th><td>${esc(r.doc_type)}</td></tr>
+<tr><th>마감/미팅일</th><td>${r.due_date?`${esc(r.due_date)} <span class="tag ${ddayTone(r.due_date)}">${dday(r.due_date)}</span>`:'—'}</td></tr>
+<tr><th>접수자</th><td>${esc(r.requester||'—')}</td></tr>
+<tr><th>접수일</th><td>${fmtDate(r.created_at)}</td></tr>
+<tr><th>메모</th><td>${esc(r.memo||'—')}</td></tr>
+</table>
+${r.doc_text?`<details style="margin-top:12px"><summary class="muted" style="cursor:pointer">첨부 원문 보기</summary>
+<pre class="prompt" style="margin-top:10px;background:#fafbfc;color:var(--ink)">${esc(r.doc_text)}</pre></details>`:''}
+</div>
+<div class="card">
+<h2>진행 상태</h2>
+<div class="grid2">
+<div class="field"><label>상태</label><select id="status">
+${STATUSES.map(s=>`<option ${s===r.status?'selected':''}>${s}</option>`).join('')}</select></div>
+<div class="field"><label>완료 리포트 링크</label>
+<input id="report_url" value="${esc(r.report_url||'')}" placeholder="https://..."></div>
+</div>
+<div class="row"><button class="primary" id="save">저장</button>
+<button class="danger" id="del" style="margin-left:auto">삭제</button></div>
+</div>`;
+$('#copy').onclick = async () => {
+const ok = await copyText(prompt);
+toast(ok ? '작업지시문을 복사했습니다. Claude에 붙여넣으세요.' : '복사에 실패했습니다. 아래 내용을 직접 선택해 복사해 주세요.');
+};
+$('#save').onclick = async () => {
+const { error } = await sb.from('prescan_intakes')
+.update({ status:$('#status').value, report_url:$('#report_url').value.trim()||null }).eq('id',id);
+toast(error ? `저장 실패: ${error.message}` : '저장했습니다.');
+};
+$('#del').onclick = async () => {
+if(!confirm(`'${r.company_name}' 접수 건을 삭제할까요? 되돌릴 수 없습니다.`)) return;
+const { error } = await sb.from('prescan_intakes').delete().eq('id',id);
+if(error) return toast(`삭제 실패: ${error.message}`);
+toast('삭제했습니다.'); location.hash='#/list';
+};
+}
+/* ---------------- 멤버 관리 ---------------- */
+async function viewMembers(){
+if(!isAdmin()){ app.innerHTML=`<div class="card"><p class="muted">관리자만 접근할 수 있습니다.</p></div>`; return; }
+app.innerHTML = `<h1 style="margin-bottom:4px">멤버 관리</h1>
+<p class="muted" style="margin-bottom:14px">
+역할이 super_admin · admin · pm 인 사람만 접수 데이터를 볼 수 있습니다. customer는 접근할 수 없습니다.</p>
+<div class="card">
+<h2>초대 — 아직 가입하지 않은 사람</h2>
+<div class="note amber">여기에 이메일을 먼저 등록해 두면, 그 사람이 직접 회원가입할 때 지정한 역할이 자동으로 부여됩니다.</div>
+<form id="sf" class="row" style="align-items:flex-end">
+<div style="flex:1;min-width:200px"><label>이메일</label><input id="se" type="email" required placeholder="name@mindforest.co.kr"></div>
+<div style="width:150px"><label>역할</label><select id="sr">${ROLES.map(r=>`<option ${r==='pm'?'selected':''}>${r}</option>`).join('')}</select></div>
+<button class="primary" type="submit">초대 등록</button>
+</form>
+<div id="seedbox" style="margin-top:14px"></div>
+</div>
+<div class="card">
+<h2>가입 완료된 계정</h2>
+<div id="pbox"><p class="muted">불러오는 중…</p></div>
+</div>`;
+async function loadSeeds(){
+const { data, error } = await sb.from('app_role_seed').select('email,role').order('email');
+$('#seedbox').innerHTML = error ? `<p class="muted">${esc(error.message)}</p>`
+: (!data.length ? `<p class="muted">등록된 초대가 없습니다.</p>`
+: `<table><thead><tr><th>이메일</th><th style="width:130px">역할</th><th style="width:70px"></th></tr></thead>
+<tbody>${data.map(s=>`<tr><td>${esc(s.email)}</td><td><span class="tag t-gray">${esc(s.role)}</span></td>
+<td style="text-align:right"><button class="ghost" data-se="${esc(s.email)}">삭제</button></td></tr>`).join('')}</tbody></table>`);
+$('#seedbox').querySelectorAll('[data-se]').forEach(b => b.onclick = async () => {
+const { error } = await sb.from('app_role_seed').delete().eq('email', b.dataset.se);
+if(error) return toast(`삭제 실패: ${error.message}`);
+toast('초대를 삭제했습니다.'); loadSeeds();
+});
+}
+async function loadProfiles(){
+const { data, error } = await sb.from('app_profiles').select('id,email,name,role,active').order('created_at');
+if(error){ $('#pbox').innerHTML = `<p class="muted">${esc(error.message)}</p>`; return; }
+$('#pbox').innerHTML = `<div style="overflow-x:auto"><table>
+<thead><tr><th>이메일</th><th style="width:150px">역할</th><th style="width:90px">활성</th><th style="width:70px"></th></tr></thead>
+<tbody>${data.map(p=>{
+const self = p.id===me.id;
+return `<tr><td>${esc(p.email)}${self?' <span class="tag t-green">나</span>':''}</td>
+<td><select data-role="${p.id}" ${self?'disabled':''} title="${self?'본인 계정은 변경할 수 없습니다':''}">
+${ROLES.map(r=>`<option ${r===p.role?'selected':''}>${r}</option>`).join('')}</select></td>
+<td><input type="checkbox" data-act="${p.id}" ${p.active?'checked':''} ${self?'disabled':''} style="width:auto"></td>
+<td style="text-align:right"><button class="danger" data-del="${p.id}" ${self?'disabled':''}>삭제</button></td></tr>`;
+}).join('')}</tbody></table></div>
+<p class="muted" style="margin-top:10px">본인 계정은 변경·삭제할 수 없습니다. 마지막 관리자가 스스로 권한을 잃고 잠기는 것을 막기 위한 장치입니다.</p>`;
+$('#pbox').querySelectorAll('[data-role]').forEach(sel => sel.onchange = async () => {
+const { error } = await sb.from('app_profiles').update({ role: sel.value }).eq('id', sel.dataset.role);
+toast(error ? `변경 실패: ${error.message}` : '역할을 변경했습니다.');
+});
+$('#pbox').querySelectorAll('[data-act]').forEach(cb => cb.onchange = async () => {
+const { error } = await sb.from('app_profiles').update({ active: cb.checked }).eq('id', cb.dataset.act);
+toast(error ? `변경 실패: ${error.message}` : (cb.checked?'활성화했습니다.':'비활성화했습니다.'));
+});
+$('#pbox').querySelectorAll('[data-del]').forEach(b => b.onclick = async () => {
+if(!confirm('이 계정의 접근 권한을 삭제할까요? (로그인 계정 자체는 남습니다)')) return;
+const { error } = await sb.from('app_profiles').delete().eq('id', b.dataset.del);
+if(error) return toast(`삭제 실패: ${error.message}`);
+toast('삭제했습니다.'); loadProfiles();
+});
+}
+$('#sf').onsubmit = async e => {
+e.preventDefault();
+const email = $('#se').value.trim().toLowerCase();
+const { error } = await sb.from('app_role_seed').upsert({ email, role:$('#sr').value });
+if(error) return toast(`등록 실패: ${error.message}`);
+toast('초대를 등록했습니다. 본인이 회원가입하면 바로 이용할 수 있습니다.');
+$('#se').value=''; loadSeeds();
+};
+loadSeeds(); loadProfiles();
+}
+/* ---------------- 내 계정 ---------------- */
+function viewAccount(){
+app.innerHTML = `<h1 style="margin-bottom:14px">내 계정</h1>
+<div class="card">
+<table style="margin-bottom:16px">
+<tr><th style="width:120px">이메일</th><td>${esc(me.email)}</td></tr>
+<tr><th>역할</th><td><span class="tag t-blue">${esc(me.role||'—')}</span></td></tr>
+</table>
+<h2>비밀번호 변경</h2>
+<form id="f">
+<div class="grid2">
+<div class="field"><label>새 비밀번호</label><input id="p1" type="password" required minlength="6" autocomplete="new-password"></div>
+<div class="field"><label>새 비밀번호 확인</label><input id="p2" type="password" required minlength="6" autocomplete="new-password"></div>
+</div>
+<button class="primary" type="submit">변경</button>
+</form>
+</div>`;
+$('#f').onsubmit = async e => {
+e.preventDefault();
+if($('#p1').value !== $('#p2').value) return toast('비밀번호가 일치하지 않습니다.');
+const { error } = await sb.auth.updateUser({ password:$('#p1').value });
+toast(error ? `변경 실패: ${error.message}` : '비밀번호를 변경했습니다.');
+if(!error) $('#f').reset();
+};
+}
+/* ---------------- 라우팅 ---------------- */
+function renderNav(){
+nav.innerHTML =
+`<a href="#/list"><button class="ghost">목록</button></a>
+<a href="#/new"><button class="primary">새 접수</button></a>
+${isAdmin()?'<a href="#/members"><button class="ghost">멤버 관리</button></a>':''}
+<a href="#/account"><button class="ghost">내 계정</button></a>
+<button class="ghost" id="out">로그아웃</button>`;
+$('#out').onclick = async () => { await sb.auth.signOut(); me=null; location.hash='#/list'; boot(); };
+}
+function viewNoAccess(){
+nav.innerHTML = `<button class="ghost" id="out">로그아웃</button>`;
+$('#out').onclick = async () => { await sb.auth.signOut(); me=null; boot(); };
+app.innerHTML = `<div class="center card" style="text-align:center">
+<h1>접근 권한이 없습니다</h1>
+<p class="muted" style="margin-top:10px;line-height:1.7">
+등록되지 않았거나 비활성 상태인 계정입니다.<br>관리자(오경훈)에게 접근 권한을 요청해 주세요.</p>
+<p class="muted" style="margin-top:12px;font-size:12px">현재 로그인: ${esc(me?.email||'')}
+${me?.role?` · 역할 ${esc(me.role)}`:''}</p>
+</div>`;
+}
+function route(){
+if(recovery) return viewSetPassword();
+if(!me) return viewAuth('login');
+if(!isStaff()) return viewNoAccess();
+renderNav();
+const h = location.hash || '#/list';
+if(h.startsWith('#/i/')) return viewDetail(h.slice(4));
+if(h.startsWith('#/new')) return viewNew();
+if(h.startsWith('#/members')) return viewMembers();
+if(h.startsWith('#/account')) return viewAccount();
+return viewList();
+}
+async function boot(){ await loadMe(); route(); }
+sb.auth.onAuthStateChange((event) => {
+if(event === 'PASSWORD_RECOVERY'){ recovery = true; viewSetPassword(); return; }
+if(event === 'SIGNED_OUT'){ me=null; route(); }
+});
+window.addEventListener('hashchange', route);
+// 재설정 링크로 들어온 경우 감지
+if(location.hash.includes('type=recovery')) recovery = true;
+boot();
+</script>
+</body>
+</html>
